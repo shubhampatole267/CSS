@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>CSS Transition  Transform Demo</title>
+<title>CSS Transition  Transform </title>
 
 <style>
 body {
@@ -103,10 +103,14 @@ body {
 }
 
 .spin {
+  width: 100px;
+  height: 100px;
   background: crimson;
+  transition: transform 1s linear;
 }
+
 .spin:hover {
-  animation: spin360 1s linear infinite;
+  transform: rotate(360deg);
 }
 @keyframes spin360 {
   from { transform: rotate(0deg); }
